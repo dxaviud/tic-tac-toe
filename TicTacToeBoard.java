@@ -1,6 +1,5 @@
-package TicTacToe;
 
-import TicTacToe.Marks.*;
+import Marks.*;
 
 public class TicTacToeBoard {
     

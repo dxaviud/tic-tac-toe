@@ -1,4 +1,4 @@
-package TicTacToe.Marks;
+package Marks;
 
 import java.awt.Image;
 
