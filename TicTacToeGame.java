@@ -1,7 +1,8 @@
+package tictactoe;
 
+import tictactoe.marks.*;
+import static tictactoe.TicTacToeBoard.LEFT_PADDING;
 import java.util.Scanner;
-
-import Marks.*;
 
 public class TicTacToeGame {
 
@@ -23,7 +24,7 @@ public class TicTacToeGame {
 
             displayBoard();
 
-            System.out.println("Turn " + turn + ": " + currentPlayer + " plays.");
+            System.out.println(LEFT_PADDING + "Turn " + turn + ": " + currentPlayer + " plays.");
 
             playerMakesMark();
 
@@ -39,7 +40,7 @@ public class TicTacToeGame {
 
         //game over message
         System.out.println("\n");
-        System.out.println("Game over. Winner: " + winner);
+        System.out.println(LEFT_PADDING + "Game over. Winner: " + winner);
     }
 
     public void switchCurrentPlayer() {
@@ -62,12 +63,12 @@ public class TicTacToeGame {
         int rowInd = -1;
         int colInd = -1;
         while(true) {
-            rowInd = getPlayerInput("Enter row index: ");
-            colInd = getPlayerInput("Enter col index: ");
+            rowInd = getPlayerInput(LEFT_PADDING + "Enter row index: ");
+            colInd = getPlayerInput(LEFT_PADDING + "Enter col index: ");
             if (gameBoard.getBox(rowInd, colInd) instanceof NoMark) {
                 break;
             } else {
-                System.out.println("Must pick box that is not already marked.");
+                System.out.println(LEFT_PADDING + "Must pick box that is not already marked.");
             }
         }
         gameBoard.setBox(rowInd, colInd, mark);
@@ -81,13 +82,13 @@ public class TicTacToeGame {
                 System.out.print(prompt);
                 input = Integer.parseInt(in.next());
                 if (input < 0 || input > 2) {
-                    System.out.println("Input must be 0, 1, or 2.");
+                    System.out.println(LEFT_PADDING + "Input must be 0, 1, or 2.");
                     continue;
                 } else {
                     return input;
                 }
             } catch (NumberFormatException e) {
-                System.out.println("INVALID INPUT");
+                System.out.println(LEFT_PADDING + "INVALID INPUT");
             }
         }
     }
