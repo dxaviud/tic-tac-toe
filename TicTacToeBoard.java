@@ -48,4 +48,5 @@ public class TicTacToeBoard {
     public void setBox(int rowIndex, int colIndex, Mark newMark) {
         boxes[rowIndex][colIndex] = newMark;
     }
+    
 }
