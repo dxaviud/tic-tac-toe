@@ -6,10 +6,7 @@ public class NoMark extends Mark {
 
     private Image image;
 
-    public NoMark() {
-        // set the image
-        // super.setImage();
-    }
+    public NoMark() {}
 
     public Image getImage() {
         return super.getImage();
@@ -18,5 +15,5 @@ public class NoMark extends Mark {
     public String toString() {
         return " ";
     }
-    
+
 }
