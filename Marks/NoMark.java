@@ -3,6 +3,7 @@ package tictactoe.marks;
 import java.awt.Image;
 
 public class NoMark extends Mark {
+
     private Image image;
 
     public NoMark() {
@@ -17,4 +18,5 @@ public class NoMark extends Mark {
     public String toString() {
         return " ";
     }
+    
 }

@@ -3,6 +3,7 @@ package tictactoe.marks;
 import java.awt.Image;
 
 public abstract class Mark {
+    
     private Image image;
 
     public Image getImage() {
@@ -22,4 +23,5 @@ public abstract class Mark {
     }
 
     public abstract String toString();
+
 }

@@ -2,7 +2,8 @@ package tictactoe.marks;
 
 import java.awt.Image;
 
-public class OMark extends Mark{
+public class OMark extends Mark {
+
     private Image image;
 
     public OMark() {

@@ -2,7 +2,8 @@ package tictactoe.marks;
 
 import java.awt.Image;
 
-public class XMark extends Mark{
+public class XMark extends Mark {
+    
     private Image image;
 
     public XMark() {
