@@ -6,10 +6,7 @@ public class OMark extends Mark {
 
     private Image image;
 
-    public OMark() {
-        // set the image
-        // super.setImage();
-    }
+    public OMark() {}
 
     public Image getImage() {
         return super.getImage();
