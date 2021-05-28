@@ -1,7 +1,7 @@
 # tictactoe
 
 ## About
-This is my implementation of tic tac toe using Java. It is console based.  
+My implementation of tic-tac-toe using Java.  
 
 ![tictactoe1](https://dxaviud.github.io/images/ttt1.PNG)  
 
